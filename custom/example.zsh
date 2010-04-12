@@ -4,6 +4,18 @@
 # brainstormr=/Users/robbyrussell/Projects/development/planetargon/brainstormr
 #
 
+alias s='mate -w ~/.oh-my-zsh/custom/ && source ~/.zshrc'
+alias reload='source ~/.zshrc'
+
+function take {
+  mkdir $1
+  cd $1
+}
+
+function mapix {
+  heroku $1 --app mapix 
+}
+
 alias support='ssh revelation@67.23.21.78'
 alias foxley='ssh jpoz@173.45.225.114'
 alias gitfoxley='ssh git@173.45.225.114'
@@ -35,3 +47,6 @@ alias cl="cd /Code/Clojure/"
 alias maru="cd /Code/MacRuby/"
 
 alias wo="cd ~/Work/"
+
+alias tu="top -o cpu"
+alias tm="top -o vsize"
